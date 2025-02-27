@@ -1,11 +1,9 @@
 import { Text } from "@mantine/core";
 import {
-  IconAt,
   IconBrandGithub,
-  IconBrandGmail,
   IconBrandLinkedin,
-  IconBrandX,
-  IconMail,
+  IconFile,
+  IconMail
 } from "@tabler/icons-react";
 
 export default function Footer() {
@@ -27,7 +25,7 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            href="https://www.github.com/leonardloja"
+            href="www.linkedin.com/in/leonard-loja-89960b309"
           >
             <IconBrandLinkedin stroke={2} />
             <Text>LinkedIn</Text>
@@ -38,10 +36,11 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            href="https://www.github.com/leonardloja"
+            // TODO: Add CV drive link
+            href="#"
           >
-            <IconBrandX stroke={2} />
-            <Text>Twitter</Text>
+            <IconFile stroke={2} />
+            <Text>Resume</Text>
           </a>
         </li>
         <Text>&#124;</Text>
@@ -49,7 +48,8 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            href="https://www.github.com/leonardloja"
+            // TODO: Add email address
+            href="#"
           >
             <IconMail stroke={2} />
             <Text>Contact Me</Text>
