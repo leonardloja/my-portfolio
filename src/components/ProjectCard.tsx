@@ -7,12 +7,19 @@ import {
   CardSection,
   Group,
   Image,
+  List,
+  ListItem,
   Modal,
   RingProgress,
   Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconLink, IconTools } from "@tabler/icons-react";
+import {
+  IconInnerShadowBottomFilled,
+  IconInnerShadowBottomLeftFilled,
+  IconLink,
+  IconTools,
+} from "@tabler/icons-react";
 
 export interface Project {
   title: string;
@@ -35,24 +42,53 @@ export default function ProjectCard({
     <>
       {/* Modal */}
       <Modal
+        size="lg"
         opened={opened}
         onClose={close}
-        title={title}
+        title={
+          <Text
+            variant="gradient"
+            gradient={{ from: "blue", to: "cyan", deg: 90 }}
+            fw="bold"
+            fz="h2"
+          >
+            {title}
+          </Text>
+        }
         overlayProps={{ backgroundOpacity: 0.45, blur: 3 }}
         centered
+        padding="lg"
       >
-        <Group justify="space-between" mb="xs">
-          <Text fz="md" fw={500}>
-            Detailed Description
-          </Text>
-        </Group>
-        <Text c="dimmed" fz="sm">
+        <Group justify="space-between" mb="xs"></Group>
+        <Text c="dimmed" fz="sm" mb="md">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
           quas, tempore eaque totam error maxime cum deleniti ipsum perspiciatis
           similique soluta, recusandae nihil inventore facilis! Aperiam, magni
           porro commodi maiores, excepturi veniam, obcaecati quia laudantium
           nemo id minus. Voluptate, maiores?
         </Text>
+        <List
+          spacing="xs"
+          size="sm"
+          center
+          icon={<IconInnerShadowBottomLeftFilled size={14} />}
+        >
+          <ListItem>Test 1</ListItem>
+          <List
+            mt={10}
+            withPadding
+            spacing="xs"
+            size="sm"
+            center
+            listStyleType="disc"
+            icon={<IconInnerShadowBottomFilled size={14} />}
+          >
+            <ListItem>Test 1</ListItem>
+            <ListItem>Test 1</ListItem>
+            <ListItem>Test 1</ListItem>
+          </List>
+          <ListItem>Test 1</ListItem>
+        </List>
       </Modal>
 
       {/* Card */}
@@ -94,28 +130,29 @@ export default function ProjectCard({
           </Carousel>
         </CardSection>
         <Group align="center" justify="space-between" mb="md">
-          <Text c="" fz="h3">
-            {title}
-          </Text>
-          <Group justify="space-between">
-            {completed || (
-              <Group gap={5}>
-                <Text fz="xs" c="dimmed">
-                  In progress
-                </Text>
-                <RingProgress
-                  size={18}
-                  thickness={2}
-                  sections={[{ value: 40, color: "teal" }]}
-                />
-              </Group>
-            )}
+          <Group gap="xs" justify="center">
+            <Text c="" fz="h3">
+              {title}
+            </Text>
             <div className="flex items-center justify-center">
               <a href={link} target="_blank">
                 <IconLink stroke={1.5} />
               </a>
             </div>
           </Group>
+
+          {completed || (
+            <Group gap={5}>
+              <Text fz="sm" c="dimmed">
+                In progress
+              </Text>
+              <RingProgress
+                size={22}
+                thickness={2}
+                sections={[{ value: 40, color: "teal" }]}
+              />
+            </Group>
+          )}
         </Group>
         <Text component="span" mb="md" c="" fz="sm" lineClamp={3}>
           {description}
