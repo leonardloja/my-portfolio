@@ -1,13 +1,14 @@
+import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import {
   ColorSchemeScript,
+  Container,
   mantineHtmlProps,
   MantineProvider,
 } from "@mantine/core";
 import type { Metadata } from "next";
 import "./globals.css";
 import theme from "./theme";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Leonard Loja",
@@ -32,14 +33,16 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className="flex antialiased">
+      <body className="flex min-h-screen antialiased">
         <MantineProvider theme={theme} defaultColorScheme="dark">
           <Sidebar />
-          <div className="flex flex-1 flex-col">
-            <div className="flex-1 p-3">{children}</div>
-            <div className="border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
+          <div className="flex max-h-screen min-h-screen flex-1 flex-col">
+            <main className="flex-1 overflow-y-auto p-3">
+              <Container size="lg">{children}</Container>
+            </main>
+            <footer className="border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
               <Footer />
-            </div>
+            </footer>
           </div>
         </MantineProvider>
       </body>
