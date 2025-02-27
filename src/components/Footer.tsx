@@ -3,7 +3,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconFile,
-  IconMail
+  IconMail,
 } from "@tabler/icons-react";
 
 export default function Footer() {
@@ -36,11 +36,11 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            // TODO: Add CV drive link
+            // TODO: Add email address
             href="#"
           >
-            <IconFile stroke={2} />
-            <Text>Resume</Text>
+            <IconMail stroke={2} />
+            <Text>Contact Me</Text>
           </a>
         </li>
         <Text>&#124;</Text>
@@ -48,11 +48,11 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            // TODO: Add email address
+            // TODO: Add CV drive link
             href="#"
           >
-            <IconMail stroke={2} />
-            <Text>Contact Me</Text>
+            <IconFile stroke={2} />
+            <Text>Résumé</Text>
           </a>
         </li>
       </ul>

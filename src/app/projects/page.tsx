@@ -62,15 +62,15 @@ const projects: Project[] = [
     title: "Dwello (mobile)",
     description:
       "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
-    techStack: ["VB.NET", "Winforms"],
+    techStack: ["React Native", "Typescript"],
     link: "https://www.google.com",
     completed: true,
   },
   {
-    title: "Copra Classifier",
+    title: "Technical Foundation Skills",
     description:
       "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
-    techStack: ["Flutter", "Pytorch Lite"],
+    techStack: ["Linux", "Command Line", "Zsh", "WSL", "Neovim"],
     link: "https://www.google.com",
     completed: true,
   },
