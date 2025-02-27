@@ -1,6 +1,14 @@
 import { createTheme } from "@mantine/core";
+import { Poppins } from "next/font/google";
+
+export const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const theme = createTheme({
+  fontFamily: poppins.style.fontFamily,
   breakpoints: {
     xs: "36em",
     sm: "48em",
@@ -8,7 +16,7 @@ const theme = createTheme({
     lg: "75em",
     xl: "88em",
   },
-  colors: {
+/*   colors: {
     brand: [
       "#e6f7ff",
       "#bae7ff",
@@ -21,7 +29,7 @@ const theme = createTheme({
       "#003a8c",
       "#002766",
     ],
-  },
+  }, */
 });
 
 export default theme;

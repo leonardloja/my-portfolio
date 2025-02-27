@@ -10,7 +10,7 @@ import { IconMoon, IconSun } from "@tabler/icons-react";
 
 export const ColorSchemeToggle = () => {
   const { setColorScheme } = useMantineColorScheme();
-  const computedColorScheme = useComputedColorScheme("light", {
+  const computedColorScheme = useComputedColorScheme("dark", {
     getInitialValueInEffect: true,
   });
 
