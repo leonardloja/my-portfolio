@@ -33,18 +33,20 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className="flex min-h-screen antialiased">
-        <MantineProvider theme={theme} defaultColorScheme="dark">
-          <Sidebar />
-          <div className="flex max-h-screen min-h-screen flex-1 flex-col">
-            <main className="flex-1 overflow-y-auto p-3">
-              <Container size="lg">{children}</Container>
-            </main>
-            <footer className="border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
-              <Footer />
-            </footer>
-          </div>
-        </MantineProvider>
+      <body className="min-h-screen antialiased">
+        <div className="flex">
+          <MantineProvider theme={theme} defaultColorScheme="dark">
+            <Sidebar />
+            <div className="flex max-h-screen min-h-screen flex-1 flex-col">
+              <main className="flex-1 overflow-y-auto p-3">
+                <Container size="lg">{children}</Container>
+              </main>
+              <footer className="border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
+                <Footer />
+              </footer>
+            </div>
+          </MantineProvider>
+        </div>
       </body>
     </html>
   );

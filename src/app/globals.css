@@ -1,2 +1,3 @@
 @import "tailwind-preset-mantine";
-@import "./theme.css";
+@import "@mantine/carousel/styles.css";
+/* @import "./theme.css"; */

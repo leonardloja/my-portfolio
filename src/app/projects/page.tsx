@@ -1,5 +1,5 @@
 import ProjectCard, { Project } from "@/components/ProjectCard";
-import { SimpleGrid, Text } from "@mantine/core";
+import { Divider, SimpleGrid, Text } from "@mantine/core";
 
 const projects: Project[] = [
   {
@@ -82,9 +82,19 @@ export default function Projects() {
   ));
   return (
     <>
-      <Text mb={20} size="42px">
-        Projects
-      </Text>
+      <Divider
+        mb="xl"
+        size="md"
+        labelPosition="right"
+        label={
+          <Text fw="bold" c="teal.5" size="64px">
+            Projects
+            <Text component="span" fw="bold" c="blue.5" size="64px">
+              .
+            </Text>
+          </Text>
+        }
+      />
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
         {items}
       </SimpleGrid>

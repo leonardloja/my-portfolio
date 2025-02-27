@@ -1,4 +1,3 @@
-import { Stack } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import { ColorSchemeToggle } from "./ColorSchemeToggle";
@@ -7,7 +6,7 @@ import SidebarLink from "./SidebarLink";
 export default function Sidebar() {
   return (
     <nav className="min-h-screen min-w-[68px] border-r-1 border-gray-300 dark:border-gray-100/20">
-      <Stack justify="space-between" className="h-full">
+      <div className="flex flex-col justify-between h-full">
         <div>
           <div className="mt-1.5 flex items-center justify-center">
             <Link href={"/"}>
@@ -29,7 +28,7 @@ export default function Sidebar() {
         <div className="mb-1 flex items-center justify-center">
           <ColorSchemeToggle />
         </div>
-      </Stack>
+      </div>
     </nav>
   );
 }
