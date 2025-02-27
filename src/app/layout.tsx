@@ -32,12 +32,12 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body className="antialiased flex">
+      <body className="flex antialiased">
         <MantineProvider theme={theme}>
           <Sidebar />
-          <div className="flex flex-col flex-1">
-            <div className=" flex-1 p-3">{children}</div>
-            <div className=" px-3 py-1 border-t border-gray-400 dark:border-gray-100/20">
+          <div className="flex flex-1 flex-col">
+            <div className="flex-1 p-3">{children}</div>
+            <div className="border-t border-gray-400 px-3 py-1 dark:border-gray-100/20">
               Footer
             </div>
           </div>
