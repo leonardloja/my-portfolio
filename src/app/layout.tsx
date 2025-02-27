@@ -1,5 +1,4 @@
 import Sidebar from "@/components/Sidebar";
-import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
 import {
   ColorSchemeScript,
   mantineHtmlProps,
