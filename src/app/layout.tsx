@@ -7,6 +7,7 @@ import {
 import type { Metadata } from "next";
 import "./globals.css";
 import theme from "./theme";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Leonard Loja",
@@ -37,7 +38,7 @@ export default function RootLayout({
           <div className="flex flex-1 flex-col">
             <div className="flex-1 p-3">{children}</div>
             <div className="border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
-              Footer
+              <Footer />
             </div>
           </div>
         </MantineProvider>
