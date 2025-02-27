@@ -23,8 +23,8 @@ export const ColorSchemeToggle = () => {
       aria-label="Toggle color scheme"
       className="border-none bg-transparent"
     >
-      <IconSun className="hidden h-3 w-3 dark:block" stroke={1.5} />
-      <IconMoon className="block h-3 w-3 dark:hidden" stroke={1.5} />
+      <IconSun className="hidden h-2.5 w-2.5 dark:block" stroke={1.5} />
+      <IconMoon className="block h-2.5 w-2.5 dark:hidden" stroke={1.5} />
     </ActionIcon>
   );
 };

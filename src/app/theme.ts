@@ -16,7 +16,7 @@ const theme = createTheme({
     lg: "75em",
     xl: "88em",
   },
-/*   colors: {
+  /*   colors: {
     brand: [
       "#e6f7ff",
       "#bae7ff",

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <nav className="h-screen w-[68px] border-r-2 border-gray-400 dark:border-gray-100/10">
+    <nav className="h-screen w-[68px] border-r-1 border-gray-300 dark:border-gray-100/20">
       <div className="mt-1.5 flex items-center justify-center">
         <Link href={"/"}>
           <Image src="/images/favicon.png" width={34} height={34} alt="logo" />
@@ -16,7 +16,7 @@ export default function Sidebar() {
         <SidebarLink name={"Projects"} href={"/projects"} />
         <SidebarLink name={"Experience"} href={"/experience"} />
       </div>
-      <div className="mt-2 flex items-center justify-center">
+      <div className="mt-1.5 flex items-center justify-center">
         <ColorSchemeToggle />
       </div>
     </nav>
