@@ -61,11 +61,7 @@ export default function ProjectCard({
       >
         <Group justify="space-between" mb="xs"></Group>
         <Text c="dimmed" fz="sm" mb="md">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-          quas, tempore eaque totam error maxime cum deleniti ipsum perspiciatis
-          similique soluta, recusandae nihil inventore facilis! Aperiam, magni
-          porro commodi maiores, excepturi veniam, obcaecati quia laudantium
-          nemo id minus. Voluptate, maiores?
+          {description}
         </Text>
         <List
           spacing="xs"
