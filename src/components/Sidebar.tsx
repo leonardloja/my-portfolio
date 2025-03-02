@@ -6,7 +6,7 @@ import SidebarLink from "./SidebarLink";
 export default function Sidebar() {
   return (
     <nav className="min-h-screen min-w-[68px] border-r-1 border-gray-300 dark:border-gray-100/20">
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex h-full flex-col justify-between">
         <div>
           <div className="mt-1.5 flex items-center justify-center">
             <Link href={"/"}>
@@ -22,6 +22,7 @@ export default function Sidebar() {
             <SidebarLink name={"About"} href={"/"} />
             <SidebarLink name={"Projects"} href={"/projects"} />
             <SidebarLink name={"Experience"} href={"/experience"} />
+            <SidebarLink name={"Books"} href={"/books"} />
           </div>
         </div>
 
