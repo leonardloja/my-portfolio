@@ -25,7 +25,7 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            href="www.linkedin.com/in/leonard-loja-89960b309"
+            href="https://www.linkedin.com/in/leonard-loja-89960b309"
           >
             <IconBrandLinkedin stroke={2} />
             <Text>LinkedIn</Text>
