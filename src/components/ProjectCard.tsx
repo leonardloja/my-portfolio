@@ -26,7 +26,7 @@ export interface Project {
   title: string;
   description: string;
   techStack: string[];
-  link: string;
+  link?: string;
   completed: boolean;
 }
 
@@ -86,11 +86,13 @@ export default function ProjectCard({
             <Text c="" fz="h3">
               {title}
             </Text>
-            <div className="flex items-center justify-center">
-              <a href={link} target="_blank">
-                <IconLink stroke={1.5} />
-              </a>
-            </div>
+            {link && (
+              <div className="flex items-center justify-center">
+                <a href={link} target="_blank">
+                  <IconLink stroke={1.5} />
+                </a>
+              </div>
+            )}
           </Group>
 
           {completed || (
