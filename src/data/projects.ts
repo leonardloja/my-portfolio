@@ -8,20 +8,18 @@ export const projects: Project[] = [
       "https://placehold.co/100",
       "https://placehold.co/100",
     ],
-    title: "PodFind",
+    title: "PodScout",
     description:
-      "My planned personal project to dive deeper into Next.js development. I'm designing it as a podcast discovery application to help users find new podcasts based on their interests and preferences. In future, I plant to extend it into a complete podcast player with streaming capabilities. This project allows me to build a more complex application as my Next.js skills advance.",
+      "My planned personal project to dive deeper into Next.js development. I'm designing it as a podcast discovery application to help users find new podcasts based on their interests and preferences. In future, I plan to extend it into a complete podcast player with streaming capabilities. This project allows me to build a more complex application as my Next.js skills advance.",
     techStack: ["Next.js", "Typescript", "Mantine"],
-    link: "",
     completed: false,
   },
   {
     images: ["https://placehold.co/100", "https://placehold.co/100"],
     title: "My Portfolio",
     description:
-      "This website that I currently work on to showcase my skills, experience, and projects to potential employers.",
+      "This website that I created to showcase my skills, experience, and projects to potential employers.",
     techStack: ["Next.js", "Typescript", "Mantine", "Tailwind"],
-    link: "https://www.leonardloja.me",
     completed: false,
   },
   {
@@ -47,7 +45,7 @@ export const projects: Project[] = [
     title: "Animeo",
     description:
       "Animeo is an anime watching app I built using Flutter for my college project. This was my first mobile app, which I taught myself how to create by learning Flutter on my own.",
-    techStack: ["Flutter", "Dart", "GetX", "SQLite"],
+    techStack: ["Flutter", "Dart", "SQLite"],
     link: "https://github.com/leonardloja/animeo",
     completed: true,
   },
@@ -83,7 +81,7 @@ export const projects: Project[] = [
       "https://placehold.co/100",
       "https://placehold.co/100",
     ],
-    title: "Dwello (web)",
+    title: "Dwello",
     description:
       "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
     techStack: ["Next.js", "Typescript", "Clerk Auth", "Supabase"],
@@ -96,24 +94,10 @@ export const projects: Project[] = [
       "https://placehold.co/100",
       "https://placehold.co/100",
     ],
-    title: "Dwello (mobile)",
-    description:
-      "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
-    techStack: ["React Native", "Typescript"],
-    link: "https://github.com/leonardloja/dwello-mobile",
-    completed: true,
-  },
-  {
-    images: [
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-    ],
     title: "Technical Foundation Skills",
     description:
       "While not a standalone project, these skills represent my technical environment knowledge that supports all my development work.",
     techStack: ["Linux", "Command Line", "Zsh", "WSL", "Neovim"],
-    link: "",
     completed: true,
   },
 ];
