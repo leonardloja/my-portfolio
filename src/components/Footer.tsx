@@ -8,8 +8,8 @@ import {
 
 export default function Footer() {
   return (
-    <div className="flex justify-between">
-      <ul className="flex gap-1">
+    <div className="flex flex-col items-center space-y-1 md:flex-row md:justify-between md:space-y-0">
+      <ul className="flex flex-wrap gap-1">
         <li>
           <a
             className="flex gap-0.5 hover:text-blue-700"
@@ -56,9 +56,9 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="text-slate-400 dark:text-slate-400/30">
+      <Text className="text-slate-400 dark:text-slate-400/30">
         &copy; 2025 Leonard Loja. All rights reserved.
-      </p>
+      </Text>
     </div>
   );
 }

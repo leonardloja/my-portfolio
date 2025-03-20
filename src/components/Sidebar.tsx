@@ -5,8 +5,8 @@ import SidebarLink from "./SidebarLink";
 
 export default function Sidebar() {
   return (
-    <nav className="min-h-screen min-w-[68px] border-r-1 border-gray-300 dark:border-gray-100/20">
-      <div className="flex flex-col justify-between h-full">
+    <nav className="h-screen min-w-[68px] border-r-1 border-gray-300 dark:border-gray-100/20">
+      <div className="flex h-full flex-col justify-between">
         <div>
           <div className="mt-1.5 flex items-center justify-center">
             <Link href={"/"}>
