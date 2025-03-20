@@ -31,21 +31,26 @@ export default function Home() {
             Hi, I&apos;m Leonard.
           </Text>
           <div className="mt-1.5 space-y-1.5">
-            <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem
-              vel repellat rerum pariatur quam praesentium neque repellendus
-              autem mollitia. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Animi earum maxime temporibus nulla rerum unde.
+            <Text size="md">
+              A recent graduate with a love for building software. Throughout
+              college, I&apos;ve created desktop apps using VB.NET, mobile apps
+              with Flutter, and websites, which is where I&apos;m focusing my
+              career path. I&apos;m currently looking for my first full-time
+              role as a developer to turn my dream job into reality.
             </Text>
-            <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem
-              vel repellat rerum pariatur quam praesentium neque repellendus
-              autem mollitia. Lorem ipsum dolor sit amet.
+            <Text size="md">
+              When I build things, I focus on making them both well-structured
+              and easy to use. I care about creating software that works
+              smoothly and looks good. I put my best effort into every project,
+              paying close attention to the small details that make a big
+              difference.
             </Text>
-            <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem
-              vel repellat rerum pariatur quam praesentium neque repellendus
-              autem mollitia.
+            <Text size="md">
+              Outside of coding, I enjoy reading books, especially light novels.
+              I like to learn new tech skills through both books and online
+              videos, as this helps me understand things better. I&apos;m eager
+              to join a team where I can grow my skills while helping to build
+              useful and interesting projects.
             </Text>
           </div>
           <Button
