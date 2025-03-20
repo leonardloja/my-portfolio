@@ -7,19 +7,14 @@ import {
   CardSection,
   Group,
   Image,
-  List,
-  ListItem,
   Modal,
   RingProgress,
   Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import {
-  IconInnerShadowBottomFilled,
-  IconInnerShadowBottomLeftFilled,
-  IconLink,
-  IconTools,
-} from "@tabler/icons-react";
+import { IconLink, IconTools } from "@tabler/icons-react";
+import ModalContent from "./ModalContent";
+import ModalHeader from "./ModalHeader";
 
 export interface Project {
   images: string[];
@@ -59,12 +54,11 @@ export default function ProjectCard({
       <Card withBorder padding="lg" className={""}>
         <CardSection>
           <Carousel
-            height={350}
             mb="md"
-            slideGap="sm"
             loop
             align="center"
-            slideSize="80%"
+            slideSize={{ base: "100%", sm: "70%", md: "80%" }}
+            slideGap="sm"
           >
             {images.map((image, idx) => {
               console.log(image);
@@ -89,7 +83,7 @@ export default function ProjectCard({
             {link && (
               <div className="flex items-center justify-center">
                 <a href={link} target="_blank">
-                  <IconLink stroke={1.5} />
+                  <IconLink stroke={1.5} className="text-teal-500" />
                 </a>
               </div>
             )}
@@ -108,7 +102,14 @@ export default function ProjectCard({
             </Group>
           )}
         </Group>
-        <Text component="span" mb="md" c="" fz="sm" lineClamp={3}>
+        <Text
+          component="span"
+          mb="md"
+          c=""
+          fz="sm"
+          lineClamp={3}
+          className="flex-1"
+        >
           {description}
         </Text>
         <Anchor mb="md" onClick={open}>
@@ -125,52 +126,6 @@ export default function ProjectCard({
           </Group>
         </CardSection>
       </Card>
-    </>
-  );
-}
-
-function ModalHeader({ title }: { title: string }) {
-  return (
-    <Text
-      variant="gradient"
-      gradient={{ from: "blue", to: "cyan", deg: 90 }}
-      fw="bold"
-      fz="h2"
-    >
-      {title}
-    </Text>
-  );
-}
-
-function ModalContent({ description }: { description: string }) {
-  return (
-    <>
-      <Group justify="space-between" mb="xs"></Group>
-      <Text c="dimmed" fz="sm" mb="md">
-        {description}
-      </Text>
-      <List
-        spacing="xs"
-        size="sm"
-        center
-        icon={<IconInnerShadowBottomLeftFilled size={14} />}
-      >
-        <ListItem>Test 1</ListItem>
-        <List
-          mt={10}
-          withPadding
-          spacing="xs"
-          size="sm"
-          center
-          listStyleType="disc"
-          icon={<IconInnerShadowBottomFilled size={14} />}
-        >
-          <ListItem>Test 1</ListItem>
-          <ListItem>Test 1</ListItem>
-          <ListItem>Test 1</ListItem>
-        </List>
-        <ListItem>Test 1</ListItem>
-      </List>
     </>
   );
 }
