@@ -42,11 +42,37 @@ export const projects: Project[] = [
       "https://placehold.co/100",
       "https://placehold.co/100",
     ],
+    title: "Dwello",
+    description:
+      "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
+    techStack: ["Next.js", "Typescript", "Clerk Auth", "Supabase"],
+    link: "https://github.com/leonardloja/dwello-web",
+    completed: true,
+  },
+  {
+    images: [
+      "https://placehold.co/100",
+      "https://placehold.co/100",
+      "https://placehold.co/100",
+    ],
     title: "Animeo",
     description:
       "Animeo is an anime watching app I built using Flutter for my college project. This was my first mobile app, which I taught myself how to create by learning Flutter on my own.",
     techStack: ["Flutter", "Dart", "SQLite"],
     link: "https://github.com/leonardloja/animeo",
+    completed: true,
+  },
+  {
+    images: [
+      "https://placehold.co/100",
+      "https://placehold.co/100",
+      "https://placehold.co/100",
+    ],
+    title: "Discord UI Clone",
+    description:
+      "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
+    techStack: ["Next.js", "TailwindCSS"],
+    link: "#",
     completed: true,
   },
   {
@@ -73,19 +99,6 @@ export const projects: Project[] = [
       "This was my first VB.NET application, built for our course project in college to help local government units manage their community information and services.",
     techStack: ["VB.NET", "Winforms", "Guna Framework", "MySQL"],
     link: "https://github.com/leonardloja/brgy_mgt_system",
-    completed: true,
-  },
-  {
-    images: [
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-    ],
-    title: "Dwello",
-    description:
-      "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
-    techStack: ["Next.js", "Typescript", "Clerk Auth", "Supabase"],
-    link: "https://github.com/leonardloja/dwello-web",
     completed: true,
   },
   {
