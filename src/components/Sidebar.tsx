@@ -22,6 +22,7 @@ export default function Sidebar() {
             <SidebarLink name={"About"} href={"/"} />
             <SidebarLink name={"Projects"} href={"/projects"} />
             <SidebarLink name={"Experience"} href={"/experience"} />
+            <SidebarLink name={"Books"} href={"/books"} />
           </div>
         </div>
 

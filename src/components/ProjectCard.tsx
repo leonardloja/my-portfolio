@@ -22,14 +22,16 @@ import {
 } from "@tabler/icons-react";
 
 export interface Project {
+  images: string[];
   title: string;
   description: string;
   techStack: string[];
-  link: string;
+  link?: string;
   completed: boolean;
 }
 
 export default function ProjectCard({
+  images,
   title,
   description,
   techStack,
@@ -45,46 +47,12 @@ export default function ProjectCard({
         size="lg"
         opened={opened}
         onClose={close}
-        title={
-          <Text
-            variant="gradient"
-            gradient={{ from: "blue", to: "cyan", deg: 90 }}
-            fw="bold"
-            fz="h2"
-          >
-            {title}
-          </Text>
-        }
+        title={<ModalHeader title={title} />}
         overlayProps={{ backgroundOpacity: 0.45, blur: 3 }}
         centered
         padding="lg"
       >
-        <Group justify="space-between" mb="xs"></Group>
-        <Text c="dimmed" fz="sm" mb="md">
-          {description}
-        </Text>
-        <List
-          spacing="xs"
-          size="sm"
-          center
-          icon={<IconInnerShadowBottomLeftFilled size={14} />}
-        >
-          <ListItem>Test 1</ListItem>
-          <List
-            mt={10}
-            withPadding
-            spacing="xs"
-            size="sm"
-            center
-            listStyleType="disc"
-            icon={<IconInnerShadowBottomFilled size={14} />}
-          >
-            <ListItem>Test 1</ListItem>
-            <ListItem>Test 1</ListItem>
-            <ListItem>Test 1</ListItem>
-          </List>
-          <ListItem>Test 1</ListItem>
-        </List>
+        <ModalContent description={description} />
       </Modal>
 
       {/* Card */}
@@ -98,31 +66,19 @@ export default function ProjectCard({
             align="center"
             slideSize="80%"
           >
-            <CarouselSlide>
-              <Image
-                src="https://placehold.co/100"
-                alt="Running challenge"
-                mb="md"
-                onClick={open}
-              />
-            </CarouselSlide>
-            <CarouselSlide>
-              <Image
-                src="https://placehold.co/100"
-                alt="Running challenge"
-                mb="md"
-                onClick={open}
-              />
-            </CarouselSlide>{" "}
-            <CarouselSlide>
-              <Image
-                src="https://placehold.co/100"
-                alt="Running challenge"
-                mb="md"
-                onClick={open}
-              />
-            </CarouselSlide>
-            {/* ...other slides */}
+            {images.map((image, idx) => {
+              console.log(image);
+              return (
+                <CarouselSlide key={image + idx}>
+                  <Image
+                    src={image}
+                    alt="project image preview"
+                    mb="md"
+                    onClick={open}
+                  />
+                </CarouselSlide>
+              );
+            })}
           </Carousel>
         </CardSection>
         <Group align="center" justify="space-between" mb="md">
@@ -130,11 +86,13 @@ export default function ProjectCard({
             <Text c="" fz="h3">
               {title}
             </Text>
-            <div className="flex items-center justify-center">
-              <a href={link} target="_blank">
-                <IconLink stroke={1.5} />
-              </a>
-            </div>
+            {link && (
+              <div className="flex items-center justify-center">
+                <a href={link} target="_blank">
+                  <IconLink stroke={1.5} />
+                </a>
+              </div>
+            )}
           </Group>
 
           {completed || (
@@ -167,6 +125,52 @@ export default function ProjectCard({
           </Group>
         </CardSection>
       </Card>
+    </>
+  );
+}
+
+function ModalHeader({ title }: { title: string }) {
+  return (
+    <Text
+      variant="gradient"
+      gradient={{ from: "blue", to: "cyan", deg: 90 }}
+      fw="bold"
+      fz="h2"
+    >
+      {title}
+    </Text>
+  );
+}
+
+function ModalContent({ description }: { description: string }) {
+  return (
+    <>
+      <Group justify="space-between" mb="xs"></Group>
+      <Text c="dimmed" fz="sm" mb="md">
+        {description}
+      </Text>
+      <List
+        spacing="xs"
+        size="sm"
+        center
+        icon={<IconInnerShadowBottomLeftFilled size={14} />}
+      >
+        <ListItem>Test 1</ListItem>
+        <List
+          mt={10}
+          withPadding
+          spacing="xs"
+          size="sm"
+          center
+          listStyleType="disc"
+          icon={<IconInnerShadowBottomFilled size={14} />}
+        >
+          <ListItem>Test 1</ListItem>
+          <ListItem>Test 1</ListItem>
+          <ListItem>Test 1</ListItem>
+        </List>
+        <ListItem>Test 1</ListItem>
+      </List>
     </>
   );
 }
