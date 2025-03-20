@@ -39,7 +39,9 @@ export default function RootLayout({
             <Sidebar />
             <div className="flex h-screen flex-1 flex-col">
               <main className="flex-1 overflow-y-scroll p-3">
-                <Container size="lg">{children}</Container>
+                <Container size="lg" h="100%">
+                  {children}
+                </Container>
               </main>
               <footer className="min-w-0 border-t border-gray-300 px-1 py-1 sm:px-3 dark:border-gray-100/20">
                 <Footer />
