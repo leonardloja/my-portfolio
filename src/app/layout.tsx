@@ -34,8 +34,8 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className="h-screen antialiased">
-        <div className="flex">
-          <MantineProvider theme={theme} defaultColorScheme="dark">
+        <MantineProvider theme={theme} defaultColorScheme="dark">
+          <div className="flex">
             <Sidebar />
             <div className="flex h-screen flex-1 flex-col">
               <main className="flex-1 overflow-y-scroll p-3">
@@ -47,8 +47,8 @@ export default function RootLayout({
                 <Footer />
               </footer>
             </div>
-          </MantineProvider>
-        </div>
+          </div>
+        </MantineProvider>
       </body>
     </html>
   );
