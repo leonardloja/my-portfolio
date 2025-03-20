@@ -36,8 +36,7 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            // TODO: Add email address
-            href="#"
+            href="mailto:l.leonard.loja@gmail.com"
           >
             <IconMail stroke={2} />
             <Text>Contact Me</Text>
@@ -48,8 +47,7 @@ export default function Footer() {
           <a
             className="flex gap-0.5 hover:text-blue-700"
             target="_blank"
-            // TODO: Add CV drive link
-            href="#"
+            href="https://drive.google.com/file/d/1GZuW3wZTKp0Me8ix1qOWmeLBpZXM5vPd/view?usp=sharing"
           >
             <IconFile stroke={2} />
             <Text>Résumé</Text>
