@@ -18,6 +18,9 @@ import {
   IconBrandFigma,
   IconBrandAngular,
   IconBrandLaravel,
+  IconApi,
+  IconBrandPrisma,
+  IconBrandSupabase,
 } from "@tabler/icons-react";
 
 export const techIcons = [
@@ -28,8 +31,11 @@ export const techIcons = [
   { icon: IconBrandTailwind, label: "Tailwind" },
   { icon: IconBrandReact, label: "React" },
   { icon: IconBrandNextjs, label: "Next.js" },
-  { icon: IconBrandMysql, label: "MySQL" },
   { icon: IconBrandFlutter, label: "Flutter" },
+  { icon: IconBrandMysql, label: "MySQL" },
+  { icon: IconBrandPrisma, label: "Prisma" },
+  { icon: IconBrandSupabase, label: "Supabase" },
+  { icon: IconApi, label: "API" },
   { icon: IconBrandPython, label: "Python" },
   { icon: IconBrandGit, label: "Git" },
   { icon: IconBrandGithub, label: "GitHub" },
