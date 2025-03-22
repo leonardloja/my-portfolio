@@ -1,7 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
-import { Divider, SimpleGrid, Text } from "@mantine/core";
+import { SimpleGrid } from "@mantine/core";
 
 export default function Projects() {
   const items = projects.map((project) => (
