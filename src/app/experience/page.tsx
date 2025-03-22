@@ -1,5 +1,10 @@
+import PageHeader from "@/components/PageHeader";
 import React from "react";
 
 export default function Experience() {
-  return <div>Experience</div>;
+  return (
+    <>
+      <PageHeader title="Experience" position="left" />
+    </>
+  );
 }

@@ -1,6 +1,5 @@
 @import "tailwind-preset-mantine";
 @import "@mantine/carousel/styles.css";
-/* @import "./theme.css"; */
 
 body {
   /* TODO */

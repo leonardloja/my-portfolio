@@ -1,10 +1,10 @@
-import { Text, Title } from "@mantine/core";
-import React from "react";
+import PageHeader from "@/components/PageHeader";
+import { Text } from "@mantine/core";
 
 export default function Books() {
   return (
     <div>
-      <Title c="blue.4">Books</Title>
+      <PageHeader title="Books" />
       <Text>
         This page showcases my reading list in the fields of Computer Science
         and Information Technology.
