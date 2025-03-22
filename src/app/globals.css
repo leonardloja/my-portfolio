@@ -1,6 +1,5 @@
 @import "tailwind-preset-mantine";
 @import "@mantine/carousel/styles.css";
-/* @import "./theme.css"; */
 
 body {
   /* TODO */
@@ -22,9 +21,19 @@ body::before {
   height: 100%;
   background:
     radial-gradient(
+      at 88.486750348675035% 89.9876390605686%,
+      #1c7dd6 0px,
+      transparent 3%
+    ),
+    radial-gradient(
       at 3.486750348675035% 89.9876390605686%,
       #1c7dd6 0px,
-      transparent 6%
+      transparent 4%
+    ),
+    radial-gradient(
+      at 8.486750348675035% 79.9876390605686%,
+      #0ca678 0px,
+      transparent 3%
     ),
     radial-gradient(
       at 40.486750348675035% 55.9876390605686%,
