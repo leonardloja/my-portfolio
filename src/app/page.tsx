@@ -36,7 +36,7 @@ export default function Home() {
         gutter={{ base: 50, md: 0 }}
         align="center"
       >
-        <GridCol span="auto" order={{ base: 2, md: 1 }} pr={50}>
+        <GridCol span="auto" order={{ base: 2, md: 1 }} className="md:pr-4">
           <Text
             fw={700}
             variant="gradient"
@@ -45,7 +45,7 @@ export default function Home() {
           >
             Hi, I&apos;m Leonard.
           </Text>
-          <div className="mt-1.5 space-y-1.5">
+          <div className="mt-1.5 space-y-1.5 md:pr-1">
             <Text size="md">
               A recent graduate with a love for building software. Throughout
               college, I&apos;ve created desktop apps using VB.NET, mobile apps
@@ -86,7 +86,7 @@ export default function Home() {
             <Skeleton
               height={440}
               visible={isImageLoading}
-              className="rotate-2"
+              className={`${isImageLoading ? "block" : "hidden"}`}
             />
             <Image
               className={`${isImageLoading ? "hidden" : "block"} rotate-2`}
