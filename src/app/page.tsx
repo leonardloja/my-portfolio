@@ -1,3 +1,5 @@
+"use client";
+
 import { learningIcons, techIcons } from "@/data/icons";
 import {
   Button,
@@ -5,14 +7,27 @@ import {
   Grid,
   GridCol,
   Image,
+  Skeleton,
   Text,
   Tooltip,
 } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isImageLoading, setImageLoading] = useState(true);
   const icon = <IconChevronRight />;
+
+  // Check if image is already loaded from cache
+  useEffect(() => {
+    const img = new window.Image();
+    img.src = "/images/avatar.png";
+    if (img.complete) {
+      setImageLoading(false);
+    }
+  }, []);
+
   return (
     <div className="flex h-full flex-col items-center justify-start pt-2 md:justify-center md:pt-0">
       <Grid
@@ -68,15 +83,20 @@ export default function Home() {
         </GridCol>
         <GridCol span={{ base: 12, md: 5 }} order={{ base: 1, md: 2 }}>
           <Center>
-            <Image
+            <Skeleton
+              height={440}
+              visible={isImageLoading}
               className="rotate-2"
+            />
+            <Image
+              className={`${isImageLoading ? "hidden" : "block"} rotate-2`}
               radius="md"
               h="auto"
               w={{ base: 500, md: 900 }}
               fit="contain"
-              // src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-9.png"
               src="/images/avatar.png"
               alt="project logo"
+              onLoad={() => setImageLoading(false)}
             />
           </Center>
           <div className="mt-3 hidden flex-col md:flex">
