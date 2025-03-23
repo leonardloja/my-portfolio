@@ -6,10 +6,10 @@ import {
   Card,
   CardSection,
   Group,
-  Image,
   Modal,
+  Paper,
   RingProgress,
-  Text,
+  Text
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconLink, IconTools } from "@tabler/icons-react";
@@ -64,12 +64,13 @@ export default function ProjectCard({
               console.log(image);
               return (
                 <CarouselSlide key={image + idx}>
-                  <Image
-                    src={image}
-                    alt="project image preview"
-                    mb="md"
+                  <Paper
+                    style={{
+                      backgroundImage: `url(${image})`,
+                    }}
                     onClick={open}
-                  />
+                    className="h-24 bg-contain bg-center bg-no-repeat"
+                  ></Paper>
                 </CarouselSlide>
               );
             })}
