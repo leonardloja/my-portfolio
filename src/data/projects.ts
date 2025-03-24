@@ -9,8 +9,8 @@ export const projects: Project[] = [
     ],
     title: "PodScout",
     description:
-      "My planned personal project to dive deeper into Next.js development. I'm designing it as a podcast discovery application to help users find new podcasts based on their interests and preferences. In future, I plan to extend it into a complete podcast player with streaming capabilities. This project allows me to build a more complex application as my Next.js skills advance.",
-    techStack: ["Next.js", "Typescript", "Mantine"],
+      "My planned personal project using Next.js. I'm designing it as a podcast discovery application to help users find new podcasts based on their interests and preferences. In future, I plan to extend it into a complete podcast player with streaming capabilities. This project allows me to build a more complex application as my Next.js skills advance.",
+    techStack: ["Next.js", "Typescript"],
     completed: false,
   },
   {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: "My Portfolio",
     description:
       "This website that I created to showcase my skills, experience, and projects to potential employers.",
-    techStack: ["Next.js", "Typescript", "Mantine", "Tailwind"],
+    techStack: ["Next.js", "Typescript", "Mantine", "Tailwind CSS"],
     completed: false,
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     ],
     title: "Dwello",
     description:
-      "lorem ipsum dolor sit amet lorem ipsum dolor silorem ipsum dolor sit amet lorem ipsum dolor sit amet t amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet ",
+      "Developed a boarding house finder with a web platform for owners to list rooms and a companion mobile app for users to browse listings. Users can search for listings by location and use an integrated map that displays markers for each listing.",
     techStack: ["Next.js", "Typescript", "Clerk Auth", "Supabase"],
     link: "https://github.com/leonardloja/dwello-web",
     completed: true,
@@ -90,17 +90,14 @@ export const projects: Project[] = [
       "/images/discord/4.png",
     ],
     title: "Discord UI Clone",
-    description: "lorem ipsum dolor ...",
-    techStack: ["Next.js", "TailwindCSS"],
+    description:
+      "Developed a Discord UI clone using Next.js and Tailwind CSS, implementing responsive UI components including channels, servers, and messaging interfaces to demonstrate CSS styling capabilities and frontend development skills",
+    techStack: ["Next.js", "Tailwind CSS"],
     link: "https://github.com/leonardloja/discord-ui-clone",
     completed: true,
   },
   {
-    images: [
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-      "https://placehold.co/100",
-    ],
+    images: ["https://placehold.co/100", "https://placehold.co/100"],
     title: "EasyTask",
     description:
       "EasyTask is a task management application I worked on during my OJT using Angular. This was my first experience with a frontend framework.",
