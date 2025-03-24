@@ -31,7 +31,7 @@ export default function ModalContent({ description }: ModalContentProps) {
         center
         icon={<IconInnerShadowBottomLeftFilled size={14} />}
       >
-        <ListItem>Test 1</ListItem>
+        <ListItem></ListItem>
         <List
           mt={10}
           withPadding
@@ -41,11 +41,11 @@ export default function ModalContent({ description }: ModalContentProps) {
           listStyleType="disc"
           icon={<IconInnerShadowBottomFilled size={14} />}
         >
-          <ListItem>Test 1</ListItem>
-          <ListItem>Test 1</ListItem>
-          <ListItem>Test 1</ListItem>
+          <ListItem></ListItem>
+          <ListItem></ListItem>
+          <ListItem></ListItem>
         </List>
-        <ListItem>Test 1</ListItem>
+        <ListItem></ListItem>
       </List>
     </>
   );
