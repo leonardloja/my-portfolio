@@ -35,7 +35,7 @@ export default function RootLayout({
       </head>
       <body className="h-screen antialiased">
         <MantineProvider theme={theme} defaultColorScheme="dark">
-          <div className="flex">
+          <div className="hidden sm:flex">
             <Sidebar />
             <div className="flex h-screen flex-1 flex-col">
               <main className="flex-1 overflow-y-scroll p-3">
@@ -43,10 +43,22 @@ export default function RootLayout({
                   {children}
                 </Container>
               </main>
-              <footer className="min-w-0 border-t border-gray-300 px-1 py-1 sm:px-3 dark:border-gray-100/20">
+              <footer className="min-w-0 border-t border-gray-300 px-3 py-1 dark:border-gray-100/20">
                 <Footer />
               </footer>
             </div>
+          </div>
+          {/* Mobile layout */}
+          <div className="flex h-full flex-col sm:hidden">
+            <Sidebar />
+            <main className="flex-1 overflow-auto px-3 pb-3">
+              <Container size="lg" h="100%">
+                {children}
+              </Container>
+            </main>
+            <footer className="border-t border-gray-300 px-1 py-1 dark:border-gray-100/20">
+              <Footer />
+            </footer>
           </div>
         </MantineProvider>
       </body>
