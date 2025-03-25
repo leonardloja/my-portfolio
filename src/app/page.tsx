@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex h-full flex-col items-center justify-start pt-2 md:justify-center md:pt-0">
+    <div className="flex h-full flex-col items-center justify-start pt-1 md:justify-center md:pt-0">
       <Grid
         className="bg-amber-200- gap-[100px]"
         justify="center"

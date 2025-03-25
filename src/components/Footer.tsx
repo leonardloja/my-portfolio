@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <div className="flex flex-col items-center space-y-1 md:flex-row md:justify-between md:space-y-0">
-      <ul className="flex flex-wrap gap-1">
+      <ul className="flex flex-wrap justify-center gap-1">
         <li>
           <a
             className="flex gap-0.5 hover:text-blue-700"
