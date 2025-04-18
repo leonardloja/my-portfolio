@@ -62,7 +62,7 @@ export default function Experience() {
               consectetur adipisicing elit. Dolore, iusto?
             </Text>
             <Text size="sm" mt={4}>
-              2024
+              2023
             </Text>
           </TimelineItem>
         </Timeline>

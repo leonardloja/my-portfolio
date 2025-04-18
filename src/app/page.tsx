@@ -1,6 +1,6 @@
 "use client";
 
-import { learningIcons, techIcons } from "@/data/icons";
+import { techIcons } from "@/data/icons";
 import {
   Button,
   Center,
@@ -117,17 +117,7 @@ function Technologies() {
       <div className="mt-0.5 flex flex-wrap gap-0.5">
         {techIcons.map(({ label, icon: Icon }) => (
           <Tooltip label={label} color="teal" withArrow key={label}>
-            <Icon size={40} stroke={1} className="hover:translate-y-[2px]" />
-          </Tooltip>
-        ))}
-      </div>
-      <Text className="mt-2 text-lg font-medium tracking-widest uppercase">
-        Learning
-      </Text>
-      <div className="mt-0.5 flex">
-        {learningIcons.map(({ label, icon: Icon }) => (
-          <Tooltip label={label} color="teal" withArrow key={label}>
-            <Icon size={40} stroke={1} className="hover:translate-y-[2px]" />
+            <Icon size={36} stroke="1" className="hover:translate-y-[2px]" />
           </Tooltip>
         ))}
       </div>
